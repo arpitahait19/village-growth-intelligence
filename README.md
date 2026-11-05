@@ -61,9 +61,13 @@ pip install -r requirements.txt
 earthengine authenticate          # only needed to re-run the Earth Engine exports
 ```
 
-**2. Raw data** – download from [SHRUG (Development Data Lab)](https://www.devdatalab.org/shrug) into `data/raw/`:
-- PC11 village polygons (GeoPackage) → `village_modified.gpkg`
-- SHRID population and land area weights (CSV) → `shrid_pop_area_key.csv`
+**2. Raw data** – place these two files in `data/raw/` (too large for GitHub):
+- PC11 village polygons (GeoPackage) → `village_modified.gpkg` (~900 MB)
+- SHRID population and land area weights (CSV) → `shrid_pop_area_key.csv` (~57 MB)
+
+Original source: [SHRUG, Development Data Lab](https://www.devdatalab.org/shrug) – please cite SHRUG when using the data.
+
+Mirror for convenience (same files, no sign-up): [Google Drive folder](https://drive.google.com/drive/folders/1DwlKo1bvEVOCz1N2ioFekk7b0x7XeATz)
 
 **3. Run the notebooks in `notebooks/` in order** (start `jupyter notebook` from the repository folder, then *Kernel → Restart & Run All* on each):
 

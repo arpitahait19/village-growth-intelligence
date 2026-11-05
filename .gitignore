@@ -13,3 +13,12 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+
+# Pre-cleanup copies of the notebooks (local backup only)
+_original_notebooks/
+_cleaned/
+
+# Large boundary files (>100 MB) - rebuilt by 01_prepare_villages.ipynb
+data/processed/*.gpkg
+data/processed/*_shp/
+data/processed/*_shp.zip

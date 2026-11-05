@@ -1,8 +1,10 @@
 earthengine-api
-geemap
 geopandas
+pyogrio
 pandas
 numpy
-folium
+shapely
 matplotlib
-jupyter
+mapclassify
+folium
+notebook

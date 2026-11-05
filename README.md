@@ -38,10 +38,11 @@ Full reasoning for every choice is in the notebooks (markdown cells marked ✍�
 ## Repository layout
 
 ```
-01_prepare_villages.ipynb   clean SHRUG village boundaries, build Earth Engine upload files
-02_extract_signals.ipynb    Google Earth Engine: night lights, built-up, buildings (pilot + national)
-03_score_rank.ipynb         features, distance to cities, Stage 1 + Stage 2 scoring, top-100 lists
-04_visualise.ipynb          interactive map, charts, static map
+notebooks/
+  01_prepare_villages.ipynb   clean SHRUG village boundaries, build Earth Engine upload files
+  02_extract_signals.ipynb    Google Earth Engine: night lights, built-up, buildings (pilot + national)
+  03_score_rank.ipynb         features, distance to cities, Stage 1 + Stage 2 scoring, top-100 lists
+  04_visualise.ipynb          interactive map, charts, static map
 data/raw/                   SHRUG downloads (not in the repo – see below)
 data/processed/             extracted signal CSVs (in the repo); large boundary files (rebuilt by notebook 01)
 outputs/                    final tables, map, figures
@@ -64,7 +65,7 @@ earthengine authenticate          # only needed to re-run the Earth Engine expor
 - PC11 village polygons (GeoPackage) → `village_modified.gpkg`
 - SHRID population and land area weights (CSV) → `shrid_pop_area_key.csv`
 
-**3. Run the notebooks in order** from the repository folder (`jupyter notebook`, then *Kernel → Restart & Run All* on each):
+**3. Run the notebooks in `notebooks/` in order** (start `jupyter notebook` from the repository folder, then *Kernel → Restart & Run All* on each):
 
 | Notebook | Run time | Notes |
 |---|---|---|
